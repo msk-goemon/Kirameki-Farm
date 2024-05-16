@@ -1,0 +1,416 @@
+@charset "UTF-8";
+
+
+/* PCサイズ設定 ---------------------------------------------*/
+/* headerの文字色変更 */
+.header__price a {
+  color: #168352;
+}
+
+
+/* フォントの設定 */
+.main-img__text {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.breadcrumbs {
+  font-size: 12px;
+}
+
+.section__title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.point__text {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.price span {
+  font-size: 16px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.sub-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+table tr th {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+table tr td {
+  font-size: 16px;
+}
+
+.contact__button {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+/* 画像の表示、非表示設定 */
+.spec-sp-main_img,
+.section-sp__line,
+.point-sp__img,
+.border-sp_img,
+.gallery-sp__img img {
+  display: none;
+}
+
+/* コンテンツの表示、非表示設定 */
+.main__title {
+  display: none;
+}
+
+/* コンテンツの幅設定 */
+.section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+/* 共通の設定 */
+.section__title {
+  margin-bottom: 18px;
+}
+
+.section__line {
+  margin-bottom: 32px;
+}
+
+/* main画像の設定 ---------------------------------------------*/
+.top__main-img,
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.top__main-img {
+  position: relative;
+  margin-top: 40px;
+}
+
+.main-img__text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 29px 39px;
+  background-color: white;
+  border-top-right-radius: 40px;
+}
+
+.breadcrumbs {
+  text-align: right;
+  margin-top: 20px;
+}
+
+/* galleryの設定 -----------------------------------------------------*/
+.section__gallery {
+  margin-top: 53px;
+}
+
+.gallery__contents {
+  padding: 0;
+}
+
+/* slickのドット設定 */
+/* 大きさ */
+.slick-dots li button:before{
+  font-size: 10px;/*初期値は6px*/
+}
+
+/* 間隔 */
+.slick-dots li{
+  width: 4px;/*初期値は20px*/
+}
+
+/* 高さ */
+.slick-dots{
+  bottom: 15px;/*初期値は-25px*/
+  right: 8px;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 62px;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #168352; /* ここを任意の色に変更 */
+}
+
+/* 特徴のセクション設定 -------------------------------------------------*/
+.point__contents {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 31px;
+}
+
+.point__text {
+  margin-top: 6px;
+  line-height: 1.7;
+}
+
+/* priceのセクション設定 ---------------------------------------------*/
+.section__price {
+  margin-top: 61px;
+}
+
+.price {
+  margin-top: -10px;
+}
+
+.price span {
+  margin-left: 10px;
+}
+
+/* specのセクション設定 ------------------------------------------*/
+.section__spec {
+  margin-top: 53px;
+}
+
+.sub-title {
+  display: flex;
+  align-items: center;
+  padding-top: 1px;
+  padding-left: 13px;
+}
+
+.sub-title p {
+  margin-left: 16px;
+}
+
+.spec__contents {
+}
+
+
+
+/* tableの設定 */
+
+.spec__table {
+  padding: 0 14px;
+  margin-top: 25px;
+}
+
+table {
+  width: 100%; /* テーブルの幅をページ幅に合わせる */
+  border-collapse: collapse; /* セル間の境界線をまとめる */
+}
+
+th, td {
+  border: 1px solid #ddd; /* 枠線のスタイル */
+  padding: 19px 18px; /* セルのパディング */
+  padding-right: 0;
+  text-align: left; /* テキストの左揃え */
+}
+
+th {
+  background-color: #f2f2f2; /* 背景色 */
+  padding-right: 26px;
+}
+
+td {
+  padding-left: 24px;
+}
+
+/* Contactセクションの設定 ------------------------------------------------*/
+.contact__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  margin-top: 71px;
+  background-image: url(../image/price/price-bg_img.png);
+  background-color: #244b62;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact__button {
+  width: 358px;
+  padding: 22px 0;
+  border: 1px solid white;
+  border-radius: 40px;
+  text-align: center;
+}
+
+
+/* SP表示用のスタイル -------------------------------------------------
+---------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+
+  /* フォントの設定 */
+  .main__title {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  .section__title {
+    font-size: 22px;
+  }
+
+  .sub-title {
+    font-size: 20px;
+  }
+
+  /* 表示、非表示設定 */
+  .spec-main_img,
+  .main-img__text,
+  .section__line,
+  .point__img,
+  .border_img,
+  .gallery-pc__img img {
+    display: none;
+  }
+
+  .spec-sp-main_img,
+  .main__title,
+  .section-sp__line,
+  .point-sp__img,
+  .gallery-sp__img img {
+    display: block;
+  }
+
+  .border-sp_img {
+    display: flex;
+  }
+
+
+  /* 全体の設定 */
+  .section,
+  .top__main-img,
+  .main__title,
+  .breadcrumbs {
+    padding: 0 16px;
+  }
+
+
+  .section__title {
+    margin-bottom: 7px;
+  }
+
+  .section-sp__line {
+    margin-bottom: 24px;
+  }
+
+  /* mainの設定 ---------------------------------------------*/
+  .top__main-img {
+    margin-top: 20px;
+  }
+
+  .top__main-img img {
+    width: 100%;
+  }
+
+  .main__title {
+    margin-top: 22px;
+  }
+
+  /* GALLERYの設定 -----------------------------------------------*/
+  .section__gallery {
+    margin-top: 31px;
+  }
+
+  .gallery-sp__img img {
+    margin: 0 auto;
+    border-radius: 24px;
+  }
+
+  .slick-dots li button:before {
+    top: 12px;
+  }
+
+
+  /* 特長セクションの設定 -----------------------------------------*/
+
+  .section__point {
+    margin-top: -6px;
+  }
+
+  .point__contents {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .point__text {
+    margin-top: 9px;
+    line-break: anywhere;
+    padding-right: 1px;
+  }
+
+  .point-sp__img {
+    margin: 0 auto;
+  }
+
+  /* priceセクションの設定 -------------------------------------------------*/
+  .section__price {
+    margin-top: 54px;
+  }
+
+  /* specセクションの設定 -----------------------------------------------------------*/
+
+
+  .sub-title {
+    padding-left: 0;
+  }
+
+  .spec__contents {
+    padding: 0;
+  }
+
+  .section__spec {
+    margin-top: 48px;
+  }
+
+  .spec__table {
+    padding: 0;
+    margin-top: 18px;
+  }
+
+
+
+  /* tableの設定 */
+
+  table {
+    width: 100%;
+  }
+
+  table tr th,
+  table tr td {
+    display: block;
+    width: 100%;
+    border-bottom: none;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  table tr:last-child{
+    border-bottom: solid 1px #ccc;
+  }
+
+  td {
+    padding-left: 19px;
+  }
+
+  /* CONTACTセクションの設定 --------------------------------------------------*/
+  .contact__background {
+    height: 360px;
+    margin-top: 65px;
+    background-position: center;
+    background-size: cover;
+  }
+}

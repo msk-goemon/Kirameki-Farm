@@ -1,0 +1,559 @@
+@charset "UTF-8";
+
+/* 共通の設定 */
+.section-title__ja {
+  margin: 3px 0 27px;
+}
+
+/* トップ画像の設定 ------------------------------------------------------
+---------------------------------------------------------------------*/
+
+.main__text {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 34px;
+  margin-top: 42px;
+}
+
+.main__sentence {
+  max-width: 530px;
+  margin-top: 6px;
+  letter-spacing: 0.1px;
+  line-height: 1.7;
+}
+
+/* トップ画像の配置調節 */
+.main__img {
+  margin-top: 61px;
+  margin-bottom: 57px;
+}
+
+/* about usの設定 ---------------------------------------------
+------------------------------------------------------------------------*/
+.about__text-main--sp {
+  display: none;
+}
+
+.about__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about__text {
+  margin-left: 98px;
+}
+
+.about__text-main {
+  max-width: 400px;
+  margin-top: 100px;
+  line-height: 1.7;
+}
+
+.about__text-sub {
+  max-width: 410px;
+  margin-top: 26px;
+  line-height: 1.8;
+}
+
+.about__img {
+  margin-right: 112px;
+}
+
+/* futureの設定 ------------------------------------------------------
+-------------------------------------------------------------------*/
+.feature-sp-img {
+  display: none;
+}
+
+.section__features {
+  margin-top: 65px;
+  margin-bottom: 58px;
+  padding-top: 55px;
+  padding-bottom: 64px;
+  background-color: #f3f9f6;
+}
+
+.features__contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+}
+
+.features__text {
+  min-height: 93px;
+  padding: 14px 20px 0;
+  line-height: 1.6;
+  background-color: white;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 0 1px 11px gray;
+}
+
+/* productsの設定 ----------------------------------------------------------------
+--------------------------------------------------------------------------*/
+.products-sp__img {
+  display: none;
+}
+
+.section__products {
+  margin-bottom: 64px;
+}
+
+.products__contents {
+  padding: 0 50px;
+}
+
+.products__content--top {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 50px;
+  margin-bottom: 42px;
+}
+
+.products__content--bottom {
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 50px;
+}
+
+.products__content {
+  display: flex;
+  align-items: center;
+  background-color: #168352;
+  border-radius: 24px
+}
+
+
+/* コンテンツ内の余白設定 */
+.content__top {
+  padding-right: 94px;
+  line-height: 1.7;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.content__bottom {
+  padding-right: 22px;
+  line-height: 1.7;
+  padding-top: 17px;
+  padding-bottom: 20px;
+}
+
+/* 画像の配置設定 */
+.products__img--top {
+  margin-left: 30px;
+}
+
+.products__img--bottom {
+  margin-left: 24px;
+}
+
+
+/* 文字の配置設定 */
+.products__text--top {
+  margin-left: 29px;
+}
+
+.products__text--bottom {
+  margin-left: 20px;
+}
+
+/* caseの設定 ------------------------------------------------------
+----------------------------------------------------------------------*/
+.case-sp__img {
+  display: none;
+}
+
+.section__case {
+  padding: 57px 0 60px;
+  margin-bottom: 56px;
+  background-color: #f3f9f6;
+}
+
+.case__contents {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+}
+
+/* 文字の配置調節 */
+.case__text {
+  margin-top: 10px;
+  line-height: 1.7;
+}
+
+/* newsの設定 ------------------------------------------------------------------------
+-----------------------------------------------------------------------------*/
+.section__news {
+  margin-bottom: 34px;
+}
+
+.news__contents {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.news__content {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+  border-top: solid 1px black;
+}
+
+.news__content--bottom {
+  border-bottom: solid 1px black;
+}
+
+.news__day-genre {
+  display: flex;
+  align-items: center;
+}
+
+.news__day {
+  margin-right: 19px;
+}
+
+.news__genre {
+  width: 134px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 24px;
+  background-color: #473221;
+  border-radius: 5px;
+  text-align: center;
+}
+
+
+/* buttonの設定 ----------------------------------------------------------
+----------------------------------------------------------------------*/
+.button__section {
+  text-align: center;
+  margin-bottom: 67px;
+}
+
+.button {
+  display: inline-block;
+  width: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #09947b;
+  border-radius: 33px;
+  text-align: center;
+  box-shadow: 0 4px 0 #168352;
+}
+
+.button:hover {
+  transform: translateY(4px);
+  box-shadow: 0 0 0 #168352;
+}
+
+/* 中間サイズの表示崩れ設定 ------------------------------------------*/
+@media (max-width: 1100px) {
+  .about__text-main {
+    margin-top: 0;
+  }
+
+  .about__text {
+    margin-left: 20px;
+  }
+
+  .about__img {
+    margin-right: 20px;
+  }
+}
+
+
+/* productsの設定 */
+@media (max-width: 977px) {
+  .products__img--top,
+  .products__img--bottom {
+    display: none;
+}
+
+  .products-sp__img {
+    display: flex;
+}
+
+  .products__content--top,
+  .products__content--bottom {
+    display: block;
+}
+
+.products__content--bottom {
+  margin-top: -24px;
+}
+
+.products__contents {
+  padding: 0 17px;
+}
+
+.products__content {
+  margin-bottom: 18px;
+  padding-left: 23px;
+}
+
+.content__top,
+.content__bottom {
+  padding-right: 0;
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.products__text--top,
+.products__text--bottom {
+  margin-left: 18px;
+}
+
+}
+
+
+
+
+/* SP表示用のスタイル -------------------------------------------------
+---------------------------------------------------------------*/
+
+@media (max-width: 767px) {
+
+
+  /* テキストの設定 */
+  .main__title {
+    font-size: 28px;
+  }
+
+  .main__sentence,
+  .about__text-sub,
+  .news__text {
+    font-size: 15px;
+  }
+
+  .about__text-main,
+  .features__text,
+  .products__text--top,
+  .products__text--bottom,
+  .case__text {
+    font-size: 18px;
+  }
+
+  .about__text-main--sp {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  /* 共通の設定 */
+  .section-title__ja {
+    margin: 0 0 20px;
+  }
+
+  /* トップの設定 */
+  .main__text {
+    display: block;
+    padding: 0;
+    margin-top: 11px;
+  }
+
+  .main__sentence {
+    width: auto;
+    margin-top: 21px;
+  }
+
+  .main__img {
+    display: none;
+  }
+
+.main__background-img {
+  height: 450px;
+  width: 100%;
+  margin-top: 29px;
+  margin-bottom: 49px;
+  background-image: url('../image/main_img.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+}
+
+/* about usの設定 ---------------------------------*/
+.about__img {
+  display: none;
+}
+
+.about__content {
+  display: block;
+  padding: 32px 16px;
+  margin: 0 auto;
+  background-image: url('../image/about__us_bg-img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__text {
+  margin: 0;
+  padding: 16px 24px 9px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 32px;
+}
+
+.about__text-main {
+  display: none;
+}
+
+.about__text-main--sp {
+  display: block;
+  line-height: 1.7;
+}
+
+.about__text-sub {
+  max-width: 800px;
+  margin-top: 9px;
+}
+
+/* futureの設定 ---------------------------------------*/
+
+.feature-img {
+  display: none;
+}
+
+.feature-sp-img {
+  display: flex;
+}
+
+.section__features {
+  margin-top: 0;
+  padding-top: 48px;
+  padding-bottom: 34px;
+  margin-bottom: 50px;
+}
+
+.features__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.features__content {
+  margin-bottom: 20px;
+}
+
+.features__text {
+  min-height: 89px;
+  height: 89px;
+  width: 358px;
+  padding: 12px 16px 0;
+  line-height: 1.7;
+}
+
+/* productsの設定 ------------------------------------------------*/
+.section__products {
+  margin-bottom: 55px;
+}
+
+.products__img--top,
+.products__img--bottom {
+  display: none;
+}
+
+.products-sp__img {
+  display: flex;
+}
+
+.products__content--top,
+.products__content--bottom {
+  display: block;
+}
+
+.products__content--bottom {
+  margin-top: -24px;
+}
+
+.products__contents {
+  padding: 0 17px;
+}
+
+.products__content {
+  margin-bottom: 20px;
+  padding-left: 23px;
+}
+
+.content__top,
+.content__bottom {
+  padding-right: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.products__text--top,
+.products__text--bottom {
+  margin-left: 18px;
+}
+
+
+/* caseの設定 --------------------------------------------*/
+.case__img {
+  display: none;
+}
+
+.case-sp__img {
+  display: flex;
+}
+
+.section__case {
+  padding: 49px 0 24px;
+  margin-bottom: 48px;
+}
+
+.case__contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+.case__content {
+  margin-bottom: 27px;
+}
+
+.case__text {
+  margin-top: 8px;
+}
+
+/* newsの設定 ----------------------------------------------------*/
+.section__news {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 22px;
+}
+.news__content {
+  display: block;
+  padding-bottom: 8px;
+  padding: 14px 0 13px;
+}
+
+.news__day {
+}
+
+.news__genre {
+  margin-left: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.news__text {
+  display: block;
+  margin-top: 8px;
+  line-height: 1.7;
+}
+
+/* buttonの設定 -------------------------------------------------*/
+.button__section {
+  margin-bottom: 62px;
+}
+
+}
+
