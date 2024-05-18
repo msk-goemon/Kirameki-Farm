@@ -1,27 +1,15 @@
 document.getElementById('hamburger').addEventListener('click', function() {
     var sideMenu = document.querySelector('.side-menu');
-    sideMenu.classList.toggle('active'); // activeクラスをトグルする
+        sideMenu.classList.toggle('active'); // activeクラスをトグルする
 
  // サイドメニュー以外の場所をクリックした場合、メニューを閉じる
 document.addEventListener('click', function (e) {
     if (!sideMenu.contains(e.target) && !hamburger.contains(e.target) && sideMenu.classList.contains('active')) {
-    sideMenu.classList.remove('active');
+        sideMenu.classList.remove('active');
     }
 });
 });
 
-
-// $('.ham-nav').click(function(){
-//     var menu = $('.side-menu');
-//     console.log("Menu position: " + menu.css('left')); // メニューの位置をログ出力
-//     if (menu.css('left') === '-250px') {
-//         menu.animate({left: '0px'}, 350); // メニューを表示
-//         console.log("Opening menu"); // メニュー開ける動作をログ出力
-//     } else {
-//         menu.animate({left: '-250px'}, 350); // メニューを隠す
-//         console.log("Closing menu"); // メニュー閉じる動作をログ出力
-//     }
-// });
 
 
 // slickの設定
