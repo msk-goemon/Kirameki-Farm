@@ -184,13 +184,15 @@ header {
   font-size: 15px;
 }
 
-.footer--center {
+.footer__border--center {
+  display: inline-block;
+  width: 1px;
+  height: 24px;
   margin: 0 20px;
+  background-color: white;
 }
 
-.footer--right {
 
-}
 
 @media (max-width: 767px) {
 
@@ -223,20 +225,6 @@ header {
 
   /* ヘッダーのハンバーガーメニュー設定 */
 
-
-  /* .side-menu {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-  } */
-
-
   .side-menu {
     display: flex;
     width: 100vw;
@@ -244,9 +232,7 @@ header {
     position: fixed;
     top: 63px;
     right: -100vw; /* メニューを画面外に隠す */
-    border-radius: 40px;
     color: white;
-    background-color: #168352;
     overflow: hidden;
     transition: right 0.5s; /* スライド効果のためのアニメーション */
     z-index: 100;
@@ -261,15 +247,15 @@ header {
 }
 
 .side-menu__wrap {
-  padding: 0 16px;
-  background-color: #333;
+  margin: 0 16px;
   width: 100vw;
-  height: 300px;
+  background-color: #168352;
+  border-radius: 24px;
 }
 
 .side-menu ul li a {
   display: block;
-  padding: 10px 20px;
+  padding: 15px 20px;
   color: white;
   text-decoration: none;
 }
@@ -310,11 +296,12 @@ header {
   /* フッターの設定 */
   .footer__link {
     font-size: 13px;
-    margin-top: -17px;
+    margin-top: -13px;
     padding: 0;
   }
 
-  .footer--center {
+  .footer__border--center {
+    height: 20px;
     margin: 0 16px;
   }
 }
