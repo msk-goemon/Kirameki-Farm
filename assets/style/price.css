@@ -188,11 +188,15 @@ table tr td {
   padding-left: 13px;
 }
 
-.sub-title p {
-  margin-left: 16px;
+.sub-title__border {
+  display: inline-block;
+  width: 3px;
+  height: 40px;
+  background-color: #168352;
 }
 
-.spec__contents {
+.sub-title p {
+  margin-left: 16px;
 }
 
 
@@ -244,6 +248,12 @@ td {
   border: 1px solid white;
   border-radius: 40px;
   text-align: center;
+  transition: 0.3s;
+}
+
+.contact__button:hover {
+  background-color: white;
+  color: #168352;
 }
 
 
@@ -366,6 +376,11 @@ td {
 
   .sub-title {
     padding-left: 0;
+    margin-top: -2px;
+  }
+
+  .sub-title__border {
+    height: 28px;
   }
 
   .spec__contents {
@@ -378,7 +393,7 @@ td {
 
   .spec__table {
     padding: 0;
-    margin-top: 18px;
+    margin-top: 19px;
   }
 
 
