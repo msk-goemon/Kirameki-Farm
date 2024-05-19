@@ -170,10 +170,12 @@ table tr td {
 
 .price {
   margin-top: -10px;
+  color: #168352;
 }
 
 .price span {
   margin-left: 10px;
+  color: white;
 }
 
 /* specのセクション設定 ------------------------------------------*/
